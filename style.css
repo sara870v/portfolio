@@ -11,7 +11,6 @@ h2,
 h3 {
   font-family: "Dosis";
   font-weight: 300;
-  /* max-width: 400px; */
 }
 
 h1 {
@@ -21,14 +20,14 @@ h1 {
 p,
 ul {
   font-family: "Roboto";
-  /* max-width: 400px; */
-  /* margin: 0 auto; */
+
   line-height: 1.5;
 }
 
 /* BUTTON https://codepen.io/valentingalmand/pen/ggKrpY */
 
 button {
+  width: 200px;
   margin: 30px;
   padding: 20px 40px;
   background: none;
@@ -319,10 +318,9 @@ span {
 }
 
 #section4 h2 {
-  margin: 0 auto;
-  /* display: flex;
+  display: flex;
   justify-content: center;
-  align-content: center; */
+  align-content: center;
 }
 
 .boxes {
@@ -333,6 +331,8 @@ span {
 
 .box1:hover {
   opacity: 0.7;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .totop {
@@ -417,7 +417,8 @@ span {
 /* FOOTER */
 #footer {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   padding: 50px;
 
   background-color: #eee2dc;
@@ -425,7 +426,10 @@ span {
 
 #footer p {
   margin-top: 20px;
-  margin: 0 auto;
+}
+
+.icons {
+  justify-content: flex-end;
 }
 
 /* FOOTER */
