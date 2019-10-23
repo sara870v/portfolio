@@ -6,6 +6,17 @@
     <title>Sarah Davidsen</title>
     <link rel="stylesheet" href="style.css" />
     <script src="https://kit.fontawesome.com/7ffcd89003.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/scrollreveal@4"></script>
+    <script>
+      window.sr = ScrollReveal({
+        distance: "50px",
+        duration: 1000,
+        easing: "ease",
+        mobile: true,
+        reset: true,
+        viewFactor: 0.4
+      });
+    </script>
   </head>
 
   <body>
@@ -107,11 +118,18 @@
         </div>
 
         <div class="icons">
-          <img src="img/icons8-facebook-old-50.png" alt="facebookicon" />
-          <img src="img/icons8-instagram-50.png" alt="instaicon" />
-          <img src="img/icons8-linkedin-50.png" alt="linkedinicon" />
+          <img src="img/linkicon.svg" alt="linkedinicon" />
+          <img src="img/fbicon.svg" alt="facebookicon" />
+
+          <img src="img/igicon.svg" alt="instaicon" />
         </div>
       </div>
+
+      <script>
+        sr.reveal(".caption1, #section2 h1, #section1 h2", {
+          origin: "left"
+        });
+      </script>
     </footer>
 
     <script src="script.js"></script>

@@ -5,6 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sarah Davidsen</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/scrollreveal@4"></script>
+    <script>
+      window.sr = ScrollReveal({
+        distance: "50px",
+        duration: 1000,
+        easing: "ease",
+        mobile: true,
+        reset: true,
+        viewFactor: 0.4
+      });
+    </script>
   </head>
 
   <body>
@@ -39,6 +50,33 @@
       </nav>
     </header>
 
+    <div class="cvbutton">
+      <button>Hent CV som pdf her</button>
+    </div>
+    <div class="timeline">
+      <img src="img/Artboard 2.svg" alt="timeline" />
+      <div class="timelinechild">
+        <h2>Tidslinje</h2>
+        <p>Til venstre kan du se en tidslinje over hvad jeg har fortaget mig og hvilke erfaringer jeg har fået.</p>
+      </div>
+    </div>
+
+    <div id="section7">
+      <h2>Kontakt</h2>
+      <div class="info">
+        <p>
+          Har jeg vækket din interresse, eller har du spørgsmål, er du velkommen til at kontakte mig.Jeg kan både kontaktes på mail, tlf eller linkedin. Det er også muligt at finde mig på sociale
+          medier
+        </p>
+
+        <div class="mail">
+          <h3>Sarahdavidsen@hotmail.com</h3>
+          <h3>Tlf: 53606743</h3>
+          <h3>Linkedin konto</h3>
+        </div>
+      </div>
+    </div>
+
     <footer>
       <div id="footer">
         <div class="topfooter">
@@ -52,6 +90,12 @@
           <img src="img/icons8-linkedin-50.png" alt="linkedinicon" />
         </div>
       </div>
+
+      <script>
+        sr.reveal(".timelinechild, .mail", {
+          origin: "left"
+        });
+      </script>
     </footer>
 
     <script src="script.js"></script>

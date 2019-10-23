@@ -5,6 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sarah Davidsen</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/scrollreveal@4"></script>
+    <script>
+      window.sr = ScrollReveal({
+        distance: "50px",
+        duration: 1000,
+        easing: "ease",
+        mobile: true,
+        reset: true,
+        viewFactor: 0.4
+      });
+    </script>
   </head>
 
   <body>
@@ -50,16 +61,18 @@
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
           nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
         </p>
+
+        <div class="contactinfo">
+          <h3>Find mine kontaktinformationer længere nede</h3>
+        </div>
       </div>
-      <div class="child1"></div>
-      <div class="child2">
-        <img src="img/white.jpg" alt="billede" />
+      <div class="child1">
+        <img src="img/Artboard 1.png" alt="sarah" />
       </div>
-      <div class="child3"></div>
     </div>
 
-    <div class="timeline">
-      <h2>Timeline</h2>
+    <div class="cvbutton">
+      <button>Se mit CV her</button>
     </div>
 
     <div id="section5">
@@ -92,6 +105,12 @@
           <img src="img/icons8-linkedin-50.png" alt="linkedinicon" />
         </div>
       </div>
+
+      <script>
+        sr.reveal(".text3, .contactinfo, #section1 h3", {
+          origin: "right"
+        });
+      </script>
     </footer>
 
     <script src="script.js"></script>
