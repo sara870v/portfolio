@@ -21,7 +21,7 @@ p,
 ul {
   font-family: "Roboto";
 
-  line-height: 1.5;
+  line-height: 40px;
 }
 
 /* BUTTON https://codepen.io/valentingalmand/pen/ggKrpY */
@@ -356,9 +356,10 @@ span {
 #section5 {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  height: 500px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 600px;
+  margin: 100px 0 0 100px;
 }
 
 #section5 img {
@@ -368,7 +369,7 @@ span {
 
 #section5 h2 {
   text-decoration: underline;
-  font-size: 35px;
+  font-size: 40px;
 }
 
 #section5 ul {
@@ -378,22 +379,22 @@ span {
 
 .text3 {
   width: 600px;
-  height: 350px;
+  height: 450px;
   background-color: lightcyan;
   text-align: center;
-  margin: 60px 0 0 -450px;
+  margin: 60px 0 0 -500px;
+}
+
+.webdevtext {
+  max-width: 300px;
+  margin-left: 35px;
 }
 
 .contactinfo {
   width: 400px;
-  height: 100px;
-
+  height: 150px;
   background-color: lightgray;
-  margin: 0 auto;
-}
-
-.contactinfo h3 {
-  padding: 35px 0 10px 35px;
+  margin: -150px 0 0 900px;
 }
 
 /* OM */
@@ -434,7 +435,7 @@ span {
 }
 
 #section7 h2 {
-  font-size: 60px;
+  font-size: 50px;
 }
 
 #section7 h3 {
@@ -449,6 +450,7 @@ span {
 
 .info p {
   max-width: 600px;
+  line-height: 40px;
 }
 
 .mail {
