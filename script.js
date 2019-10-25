@@ -13,6 +13,10 @@ function activateButton() {
   document.querySelector(".cv_btn").addEventListener("click", () => {
     window.location.href = "cv.html";
   });
+
+  document.querySelector(".frontpage_btn").addEventListener("click", () => {
+    window.location.href = "index.html";
+  });
 }
 
 let dropcontent = document.querySelector(".dropdown-content");
