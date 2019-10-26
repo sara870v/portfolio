@@ -9,17 +9,22 @@ body {
 h1,
 h2,
 h3 {
-  font-family: "Dosis";
-  font-weight: 300;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+}
+
+a {
+  color: black;
+  text-decoration: none;
 }
 
 h1 {
-  color: #41555b;
+  color: black;
 }
 
 p,
 ul {
-  font-family: "Roboto";
+  font-family: "Arimo", sans-serif;
 
   line-height: 40px;
 }
@@ -71,7 +76,7 @@ button:hover:before {
 #menu {
   font-size: 40px;
   cursor: pointer;
-  margin: 10px;
+  margin: 20px 0 0 25px;
   display: flex;
   flex-direction: row;
   color: black;
@@ -79,7 +84,7 @@ button:hover:before {
 }
 
 nav a {
-  font-family: "Dosis", sans-serif;
+  font-family: "Playfair Display", serif;
   color: black;
   text-decoration: none;
   border: none;
@@ -127,7 +132,7 @@ nav a:hover {
 
 .dropdown-content {
   /*    display: none;*/
-  margin: 0 0 20px 10px;
+  margin: 0 auto;
   flex-direction: column;
   padding: 0;
   color: white;
@@ -142,7 +147,7 @@ nav a:hover {
 }
 
 .menupunkter1 a {
-  font-family: "Dosis";
+  font-family: "Playfair Display", serif;
   font-size: 20px;
   float: right;
   display: block;
@@ -235,7 +240,7 @@ i:hover {
   width: 100vw;
   height: 200px;
   position: relative;
-  margin: 0 auto;
+  margin-top: -35px;
   text-align: center;
   animation: jump 2s infinite;
 }
@@ -394,7 +399,7 @@ span {
   justify-content: flex-start;
   align-items: flex-start;
   /* height: 800px; */
-  margin: 100px 0 0 100px;
+  margin: 100px 50px 100px 50px;
 }
 
 #section5 img {
@@ -422,7 +427,7 @@ span {
 }
 
 .webdevtext {
-  /* max-width: 400px; */
+  max-width: 550px;
   margin-left: 47px;
 }
 
@@ -471,7 +476,15 @@ span {
 #section7 {
   /* width: 100vw; */
   /* height: 400px; */
-  padding: 70px 0 0 100px;
+
+  display: flex;
+
+  margin: 100px 0 100px 200px;
+}
+
+.inforesp {
+  display: flex;
+  flex-direction: row;
 }
 
 #section7 h2 {
@@ -498,7 +511,7 @@ span {
   text-align: center;
   display: flex;
   flex-direction: column;
-  /* margin: -200px 0 0 150px; */
+  margin-top: -150px;
 }
 
 /* CV */
@@ -520,7 +533,13 @@ span {
 }
 
 .icons {
+  display: flex;
   justify-content: flex-end;
+  flex-direction: column;
+}
+
+.icons img {
+  margin: 10px;
 }
 
 /* FOOTER */
@@ -538,20 +557,32 @@ span {
   }
 
   .caption1 {
-    font-size: 40px;
-    max-width: 770px;
+    font-size: 30px;
+    max-width: 700px;
   }
 
   .box1 {
-    margin: 50px 0 0 50px;
+    flex-direction: column;
+    margin: 20px 40px 20px 40px;
+  }
+  .top {
+    margin: 0 auto;
   }
 
   .box2 {
-    margin: 50px 50px 0 0;
+    margin: 20px 40px 20px 40px;
+    flex-direction: column;
+  }
+
+  #section7 {
+    margin: -30px 0 30px 30px;
   }
 
   .caption {
-    top: 47%;
+    display: none;
+  }
+  .caption2 {
+    display: none;
   }
 
   #parent {
@@ -566,7 +597,7 @@ span {
   }
 
   .timeline {
-    height: 400px;
+    /* height: 400px; */
   }
 
   #section5 {
@@ -598,6 +629,10 @@ span {
 
   #section7 {
     padding: 0px;
+  }
+
+  .inforesp {
+    flex-direction: column;
   }
 }
 
@@ -695,12 +730,28 @@ span {
   #section7 h3 {
     font-size: 25px;
   }
+  #section7 {
+    margin: 0px;
+  }
+
+  .mail {
+    margin: 0 auto;
+  }
+
+  .inforesp {
+    display: flex;
+    flex-direction: column;
+  }
 
   .topinfo {
-    padding-left: 30px;
+    padding: 0 30px 30px 30px;
   }
+
   #footer {
     flex-direction: column;
+  }
+  .icons {
+    flex-direction: row;
   }
 }
 /* MEDIA QUERIES */
